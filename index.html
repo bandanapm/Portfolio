@@ -46,15 +46,28 @@
                         Repudiandae earum quidem voluptas odit.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Frontend</span><br>Desigining Web interfaces</li>
                             <li><span>Web Developer</span><br>Desigining Web interfaces</li>
                             <li><span>App Designer</span><br>Desigining Web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 -</span><br>Pine</li>
+                            <li><span>2023-2025</span><br>Lambton</li>
+                            <li><span>2025</span><br>Wil Project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Computer</li>
+                            <li><span>2025</span><br>Software</li>
                         </ul>
                     </div>
                 </div>

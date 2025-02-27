@@ -335,7 +335,7 @@ nav .fa-solid{
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
-    cursor: PO;
+    cursor: pointer;
 }
 
 .contact-right form{

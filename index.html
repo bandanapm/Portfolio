@@ -202,11 +202,13 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbynaDdBVEGakbfS9tz4YCivhECaHbBzwzO926fs9Q-lpucr_7YxFYjce2wE9KDpRYg_/exec'I
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynaDdBVEGakbfS9tz4YCivhECaHbBzwzO926fs9Q-lpucr_7YxFYjce2wE9KDpRYg_/exec'
         const form = document.forms['submit-to-google-sheet']
         form.addEventListener('submit', e => {
             e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) }).then(response => console.log('Success!', response)).catch(error => console.error('Error!', error.message))
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
         })
 
     </script>

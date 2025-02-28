@@ -44,9 +44,10 @@
                 <div class="about-col-2">
                     <h2 class="sub-title">About Me</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quam ipsam hic dignissimos
-                        assumenda maxime dolor. Aliquid eaque inventore dicta mollitia delectus nam quo molestiae!
-                        Repudiandae earum quidem voluptas odit.
+                        I am Bandana Pachabhaiya Magar, a passionate Frontend Designer with expertise in crafting
+                        visually appealing, user-friendly web interfaces. With a strong foundation in HTML, CSS,
+                        JavaScript, React, and Angular, I specialize in creating responsive and interactive designs that
+                        enhance user experience.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -168,7 +169,7 @@
                 <div id="msg"></div>
             </div>
         </div>
-        
+
     </div>
 
     <!-- ----------footer-------- -->
@@ -214,14 +215,14 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML =""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
 
     </script>

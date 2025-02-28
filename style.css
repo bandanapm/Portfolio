@@ -406,11 +406,6 @@ form btn2 {
     }
 }
 
-article:hover {
-    cursor: pointer;
-    box-shadow: -5px 5px 1px 1px #b54769;
-}
-
 article {
     width: 80%;
     margin-top: 20px;
@@ -419,6 +414,10 @@ article {
     border-radius: 8px;
 }
 
+article:hover {
+    cursor: pointer;
+    box-shadow: -5px 5px 1px 1px #b54769;
+}
 
 /* -------footer-------- */
 .copyright {

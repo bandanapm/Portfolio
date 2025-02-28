@@ -41,57 +41,63 @@
                 <div>
                     <i class="fas fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>I specialize in designing modern, responsive, and user-friendly websites using **HTML, CSS, JavaScript, React, and Angular**. My designs focus on **performance, accessibility, and seamless user experience** across all devices.</p>
+                    <p>I specialize in designing modern, responsive, and user-friendly websites using **HTML, CSS,
+                        JavaScript, React, and Angular**. My designs focus on **performance, accessibility, and seamless
+                        user experience** across all devices.</p>
                     <a href="#">View Projects</a>
                 </div>
                 <div>
                     <i class="fas fa-paint-brush"></i>
                     <h2>Logo Design</h2>
-                    <p>Creating **unique, eye-catching, and brand-representative logos** that leave a lasting impression. I blend creativity with design principles to craft **logos that reflect a brand’s identity and values.**</p>
+                    <p>Creating **unique, eye-catching, and brand-representative logos** that leave a lasting
+                        impression. I blend creativity with design principles to craft **logos that reflect a brand’s
+                        identity and values.**</p>
                     <a href="#">View Portfolio</a>
                 </div>
                 <div>
                     <i class="fas fa-mobile-alt"></i>
                     <h2>App Design</h2>
-                    <p>Designing **intuitive and visually appealing UI/UX** for mobile and web applications. My approach ensures a **seamless, engaging, and interactive experience** for users while maintaining **functionality and aesthetics.**</p>
+                    <p>Designing **intuitive and visually appealing UI/UX** for mobile and web applications. My approach
+                        ensures a **seamless, engaging, and interactive experience** for users while maintaining
+                        **functionality and aesthetics.**</p>
                     <a href="#">Explore Designs</a>
                 </div>
             </div>
         </div>
     </div>
-    
-    
+
+
     <!-- -----------portfolio---------- -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.jpg" alt="">
+                    <img src="images/work-1.jpg" alt="Web Development Project">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>This app is available in playstore.</p>
+                        <h3>Responsive Web Application</h3>
+                        <p>A fully responsive and dynamic web app built using React, Node.js, and MongoDB.</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.jpg" alt="">
+                    <img src="images/work-2.jpg" alt="E-commerce Website">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>This app is available in playstore.</p>
+                        <h3>E-commerce Website</h3>
+                        <p>Designed and developed a feature-rich online store with secure payment integration.</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.jpg" alt="">
+                    <img src="images/work-3.jpg" alt="Portfolio Website">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>This app is available in playstore.</p>
+                        <h3>Personal Portfolio</h3>
+                        <p>A modern, interactive portfolio showcasing my skills, projects, and experience.</p>
                         <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn">See More</a>
         </div>
     </div>
 
@@ -101,7 +107,7 @@
             <p>Copyright @ Bandana.2025 <i class="fa-solid fa-heart"></i></p>
         </div>
     </footer>
-    
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -138,14 +144,14 @@
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML =""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
 
     </script>
